@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, crimson, white 35%, white 65%, crimson);
+}
+
+.card {
+    height: 220px;
+    width: 180px;
+    background: white;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+.card::before {
+    content: 'Cool Card';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: crimson;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 220px;
+    width: 180px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: -30px;
+    margin-top: 25px;
+}
